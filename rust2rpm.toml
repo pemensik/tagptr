@@ -1,0 +1,4 @@
+[[package.extra-sources]]
+number = 2
+file = "LICENSE-APACHE"
+comments = ["Missing license text, https://github.com/oliver-giersch/tagptr/pull/3"]
