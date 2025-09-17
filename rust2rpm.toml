@@ -1,4 +1,7 @@
 [[package.extra-sources]]
 number = 2
-file = "LICENSE-APACHE"
+file = "https://github.com/oliver-giersch/tagptr/raw/81e5c6a5cbd86e0da1e47deb9ce134d1e5624137/LICENSE-APACHE"
 comments = ["Missing license text, https://github.com/oliver-giersch/tagptr/pull/3"]
+
+[scripts.prep]
+pre = [ "cp -p '%{SOURCE2}' ." ]

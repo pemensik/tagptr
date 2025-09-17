@@ -14,7 +14,7 @@ License:        MIT OR Apache-2.0
 URL:            https://crates.io/crates/tagptr
 Source:         %{crates_source}
 # * Missing license text, https://github.com/oliver-giersch/tagptr/pull/3
-Source2:        LICENSE-APACHE
+Source2:        https://github.com/oliver-giersch/tagptr/raw/81e5c6a5cbd86e0da1e47deb9ce134d1e5624137/LICENSE-APACHE
 
 BuildRequires:  cargo-rpm-macros >= 24
 
@@ -52,6 +52,7 @@ use the "default" feature of the "%{crate}" crate.
 
 %prep
 %autosetup -n %{crate}-%{version} -p1
+cp -p '%{SOURCE2}' .
 %cargo_prep
 
 %generate_buildrequires
